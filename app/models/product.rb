@@ -14,4 +14,8 @@ class Product < ActiveRecord::Base
     puts 'running the validate method'
     return false
   end
+  
+  def self.latest
+    Product.order(:updated_at).last
+  end
 end
