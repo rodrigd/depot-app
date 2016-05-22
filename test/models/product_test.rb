@@ -68,6 +68,8 @@ class ProductTest < ActiveSupport::TestCase
       image_url: "zzz.jpg",
       price: 0.05
     )
+    assert product.invalid?
+    
     product.title = "aaaa"
     assert product.invalid?
     assert_equal ["title '#{product.title}' must have at least 10 characters"], product.errors[:title]
