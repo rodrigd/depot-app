@@ -23,11 +23,10 @@ class LineItemsController < ApplicationController
   def edit
   end
 
-  # POST /line_items
-  # POST /line_items.json
   def create
     product = Product.find(params[:product_id])
-    @line_item = @cart.line_items.build(product: product)
+    @line_item = @cart.add_product(product.id)
+    # @line_item = @cart.line_items.build(product: product)
     # @line_item = LineItem.new(line_item_params)
 
     respond_to do |format|
