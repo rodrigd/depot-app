@@ -1,10 +1,19 @@
 class CartsController < ApplicationController
   before_action :set_cart, only: [:show, :edit, :update, :destroy]
+  rescue_from ActiveRecord::RecordNotFound, with: :invalid_cart
 
   # GET /carts
   # GET /carts.json
   def index
     @carts = Cart.all
+    n = 0
+    @carts.each do |cart|
+      n += 1
+      productsincart = cart.line_items.group(:product_id)
+      productsincart.each do |line_item|
+        puts "Cart " + n.to_s + " includes " + Product.find(line_item.product_id).title + ", quantity " + line_item.quantity.to_s
+      end
+    end
   end
 
   # GET /carts/1
@@ -37,7 +46,6 @@ class CartsController < ApplicationController
     end
   end
 
-  # PATCH/PUT /carts/1
   # PATCH/PUT /carts/1.json
   def update
     respond_to do |format|
@@ -70,5 +78,10 @@ class CartsController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def cart_params
       params[:cart]
+    end
+    
+    def invalid_cart
+      logger.error "Attempt to access invalid  cart #{params[:id]}"
+      redirect_to store_url, notice: 'Invalid cart'
     end
 end

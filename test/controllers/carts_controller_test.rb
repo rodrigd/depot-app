@@ -18,7 +18,7 @@ class CartsControllerTest < ActionController::TestCase
 
   test "should create cart" do
     assert_difference('Cart.count') do
-      post :create, cart: {  }
+      post :create, cart: { }
     end
 
     assert_redirected_to cart_path(assigns(:cart))

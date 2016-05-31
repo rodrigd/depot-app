@@ -23,7 +23,7 @@ ActiveRecord::Schema.define(version: 20160523022311) do
     t.integer   "cart_id"
     t.datetime  "created_at"
     t.datetime  "updated_at"
-    t.timestamp "created",                null: false
+#    t.timestamp "created",                null: false
     t.integer   "quantity",   default: 1
   end
 

@@ -1,3 +1,18 @@
+<script>
+    function showdesc(){
+        var fldval = '';
+        if (document.getElementById('product_description') == null || document.getElementById('product_description').value == '') {
+            fldval = 'DESCRIPTION CAME UP NULL';
+        }
+        else {
+            fldval = document.getElementById('product_description').value;
+        }
+        alert(fldval);
+        return;
+    }
+    
+</script>
+
 <%= form_for(@product) do |f| %>
   <% if @product.errors.any? %>
     <div id="error_explanation">
@@ -27,6 +42,8 @@
     <%= f.label :price %><br>
     <%= f.text_field :price %>
   </div>
+  <% # 5-30-2016 I finally found out how to create a button to run javascript without submitting the form! %>
+  <button type="button" onclick="showdesc(); return false;">Show me the description data</button>
   <div class="actions">
     <%= f.submit %>
   </div>
