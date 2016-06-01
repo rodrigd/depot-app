@@ -7,6 +7,12 @@ class LineItemsController < ApplicationController
   # GET /line_items.json
   def index
     @line_items = LineItem.all
+    @line_items.each do |li|
+      puts "*** line item has: "
+      puts li.id
+      puts li.product_id
+      puts li.cart_id
+    end
   end
 
   # GET /line_items/1
@@ -31,7 +37,7 @@ class LineItemsController < ApplicationController
 
     respond_to do |format|
       if @line_item.save
-        format.html { redirect_to @line_item.cart, notice: 'Line item was successfully created.' }
+        format.html { redirect_to @line_item.cart }
         # format.html { redirect_to @line_item, notice: 'Line item was successfully created.' }
         format.json { render action: 'show', status: :created, location: @line_item }
       else
