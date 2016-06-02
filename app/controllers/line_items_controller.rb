@@ -7,12 +7,12 @@ class LineItemsController < ApplicationController
   # GET /line_items.json
   def index
     @line_items = LineItem.all
-    @line_items.each do |li|
-      puts "*** line item has: "
-      puts li.id
-      puts li.product_id
-      puts li.cart_id
-    end
+    # @line_items.each do |li|
+      # puts "*** line item has: "
+      # puts li.id
+      # puts li.product_id
+      # puts li.cart_id
+    # end
   end
 
   # GET /line_items/1
