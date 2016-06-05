@@ -10,9 +10,6 @@ class CartsController < ApplicationController
     @carts.each do |cart|
       n += 1
       productsincart = cart.line_items.group(:product_id)
-      productsincart.each do |line_item|
-        puts "Cart " + n.to_s + " includes " + Product.find(line_item.product_id).title + ", quantity " + line_item.quantity.to_s
-      end
     end
   end
 
