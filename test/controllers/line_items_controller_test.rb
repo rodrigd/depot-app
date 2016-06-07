@@ -53,9 +53,23 @@ class LineItemsControllerTest < ActionController::TestCase
       delete :destroy, id: @line_item
     end
 
-    assert_redirected_to line_items_path
+    assert_redirected_to store_path
   end
   
-
+  test "should create line_item via ajax" do
+    assert_difference('LineItem.count') do
+      xhr :post, :create, product_id: products(:ruby).id
+    end
+    
+    assert_response :success
+    assert_select_jquery :html, '#cart' do
+      assert_select 'tr#current_item td', /Programming Ruby 1.9/
+    end 
+  end
   
+  test "markup needed for storejs.coffee is in place" do
+    get :index
+    assert_select '.store .entry > img', 3
+    assert_select '.entry input[type=submit]', 3
+  end
 end
