@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xml:lang="en-US" xmlns="http://www.w3.org/2005/Atom">
+  <id>tag:localhost,2005:/products/3/who_bought</id>
+  <link rel="alternate" type="text/html" href="http://localhost:3001"/>
+  <link rel="self" type="application/atom+xml" href="http://localhost:3001/products/3/who_bought.atom"/>
+  <title>Who bought Programming Ruby 1.9 &amp; 2.0</title>
+  <updated>2016-06-19T09:17:16-04:00</updated>
+  <entry>
+    <id>tag:localhost,2005:Order/1</id>
+    <published>2016-06-11T16:32:31-04:00</published>
+    <updated>2016-06-11T16:32:31-04:00</updated>
+    <link rel="alternate" type="text/html" href="http://localhost:3001/orders/1"/>
+    <title>Order 1</title>
+    <summary type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <p>Shipped to 123 Over there way</p>
+        <table>
+          <tr>
+            <th>Product</th>
+            <th>Quantity</th>
+            <th>Total Price</th>
+          </tr>
+          <tr>
+            <td>CoffeeScript</td>
+            <td>1</td>
+            <tc>$59.99</tc>
+          </tr>
+          <tr>
+            <td>Programming Ruby 1.9 &amp; 2.0</td>
+            <td>1</td>
+            <tc>$49.95</tc>
+          </tr>
+          <tr>
+            <td>Rails Test Prescriptions</td>
+            <td>1</td>
+            <tc>$34.95</tc>
+          </tr>
+          <tr>
+            <th colspan="2">total</th>
+            <th>$144.89</th>
+          </tr>
+        </table>
+        <p>Paid by Check</p>
+      </div>
+    </summary>
+    <author>
+      <name>Stephen Cabot</name>
+      <email>scabot@yahoo.com</email>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:localhost,2005:Order/2</id>
+    <published>2016-06-11T17:35:17-04:00</published>
+    <updated>2016-06-11T17:35:17-04:00</updated>
+    <link rel="alternate" type="text/html" href="http://localhost:3001/orders/2"/>
+    <title>Order 2</title>
+    <summary type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <p>Shipped to 45 Where St, Springfield, IL</p>
+        <table>
+          <tr>
+            <th>Product</th>
+            <th>Quantity</th>
+            <th>Total Price</th>
+          </tr>
+          <tr>
+            <td>CoffeeScript</td>
+            <td>1</td>
+            <tc>$59.99</tc>
+          </tr>
+          <tr>
+            <td>Programming Ruby 1.9 &amp; 2.0</td>
+            <td>1</td>
+            <tc>$49.95</tc>
+          </tr>
+          <tr>
+            <th colspan="2">total</th>
+            <th>$109.94</th>
+          </tr>
+        </table>
+        <p>Paid by Credit card</p>
+      </div>
+    </summary>
+    <author>
+      <name>Stephen colbert</name>
+      <email>colbert@yahoo.com</email>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:localhost,2005:Order/4</id>
+    <published>2016-06-11T18:18:00-04:00</published>
+    <updated>2016-06-11T18:18:00-04:00</updated>
+    <link rel="alternate" type="text/html" href="http://localhost:3001/orders/4"/>
+    <title>Order 4</title>
+    <summary type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <p>Shipped to 54 someplace</p>
+        <table>
+          <tr>
+            <th>Product</th>
+            <th>Quantity</th>
+            <th>Total Price</th>
+          </tr>
+          <tr>
+            <td>Programming Ruby 1.9 &amp; 2.0</td>
+            <td>1</td>
+            <tc>$49.95</tc>
+          </tr>
+          <tr>
+            <td>Rails Test Prescriptions</td>
+            <td>1</td>
+            <tc>$34.95</tc>
+          </tr>
+          <tr>
+            <th colspan="2">total</th>
+            <th>$84.90</th>
+          </tr>
+        </table>
+        <p>Paid by Check</p>
+      </div>
+    </summary>
+    <author>
+      <name>Andy Andersonly</name>
+      <email>aa@yahoo.com</email>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:localhost,2005:Order/6</id>
+    <published>2016-06-19T09:17:16-04:00</published>
+    <updated>2016-06-19T09:17:16-04:00</updated>
+    <link rel="alternate" type="text/html" href="http://localhost:3001/orders/6"/>
+    <title>Order 6</title>
+    <summary type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <p>Shipped to 445 Westershire Way</p>
+        <table>
+          <tr>
+            <th>Product</th>
+            <th>Quantity</th>
+            <th>Total Price</th>
+          </tr>
+          <tr>
+            <td>Rails Test Prescriptions</td>
+            <td>1</td>
+            <tc>$34.95</tc>
+          </tr>
+          <tr>
+            <td>Programming Ruby 1.9 &amp; 2.0</td>
+            <td>1</td>
+            <tc>$49.95</tc>
+          </tr>
+          <tr>
+            <td>gsfds gfsh sgh dgf</td>
+            <td>1</td>
+            <tc>$55.80</tc>
+          </tr>
+          <tr>
+            <th colspan="2">total</th>
+            <th>$140.70</th>
+          </tr>
+        </table>
+        <p>Paid by Credit card</p>
+      </div>
+    </summary>
+    <author>
+      <name>David Beckham</name>
+      <email>dbeck@yahoo.com</email>
+    </author>
+  </entry>
+</feed>
