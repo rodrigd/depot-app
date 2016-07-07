@@ -19,3 +19,10 @@ ruby:
     programs delivered fast, you should add Ruby to your toolbox. 
   price: 49.50
   image_url: ruby.png
+  
+rails:
+  title: Entering a fourth product to see if the test for 4 works
+  description:
+    Rails is a fun framework to work with. 
+  price: 149.50
+  image_url: ruby.png

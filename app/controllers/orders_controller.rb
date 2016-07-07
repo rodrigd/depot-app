@@ -1,5 +1,6 @@
 class OrdersController < ApplicationController
   include CurrentCart
+  skip_before_action :authorize, only: [:new, :create]
   before_action :set_cart, only: [:new, :create]
   before_action :set_order, only: [:show, :edit, :update, :destroy]
 
@@ -30,9 +31,6 @@ class OrdersController < ApplicationController
   # POST /orders
   # POST /orders.json
   def create
-    puts "******** show me the order_params when an order is placed"
-    puts order_params
-    puts params
     @order = Order.new(order_params)
     @order.add_line_items_from_cart(@cart)
 
